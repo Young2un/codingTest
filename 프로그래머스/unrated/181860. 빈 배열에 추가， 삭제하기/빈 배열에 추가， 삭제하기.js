@@ -21,12 +21,9 @@ function solution(arr, flag) {
     
     for(let i = 0; i < arr.length; i++){
         let tr = arr[i]*2
-        if(flag[i]===true){
-             x.length = x.length + tr
-            if(i===0){
-                x.fill(arr[i],0,tr+1)
-            }else 
-                x.fill(arr[i],x.length-tr,x.length)
+        if(flag[i]){
+            x.length = x.length + tr
+            x.fill(arr[i],x.length-tr,x.length)
         }else{
             x.splice(-arr[i])
         }
