@@ -1,3 +1,4 @@
 function solution(cipher, code) {
-    return [...cipher].filter((_,i) => (i+1) % code === 0).join('');
+    // var answer = '';
+    return [...cipher].filter((_,i)=> i%code===0).join('');
 }
