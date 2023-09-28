@@ -7,5 +7,5 @@ function solution(array) {
    console.log(arrSort[0][1])
     
     // console.log(arrSort.map(v=>v[1]))
-   return arrSort.length >1 && arrSort[0][1] === arrSort[1][1] ? -1 : +arrSort[0][0]
+   return arrSort.length > 1 && arrSort[0][1] === arrSort[1][1] ? -1 : +arrSort[0][0]
 }
