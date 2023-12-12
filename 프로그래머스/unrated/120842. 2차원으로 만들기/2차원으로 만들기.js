@@ -1,7 +1,4 @@
 function solution(num_list, n) {
-    let result =[]
-    for(let i =0 ;i<num_list.length;i+=n){
-      result = [...result, num_list.slice(i,i+n)] 
-    }
-    return result
+    var answer = [[]];
+    return answer;
 }
