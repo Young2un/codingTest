@@ -20,7 +20,7 @@ const result = [];
 
 for (let i = 1; i < input.length; i++) {
   const [cmd, value] = input[i].split(' ');
-  const output = operations[cmd](Number(value));
+  const output = operations[cmd](+value);
   if (output !== undefined) {
     result.push(output);
   }
