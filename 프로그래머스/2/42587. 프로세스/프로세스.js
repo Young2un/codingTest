@@ -7,7 +7,7 @@ function solution(priorities, location) {
     // const arr = Array.from({ length: 3 }, (_, i) => i); 
     const arr = [...priorities].map((v,i)=>[v,i])
     
-    let q = []
+    const q = []
     
     // q.length === priorities.length
 
