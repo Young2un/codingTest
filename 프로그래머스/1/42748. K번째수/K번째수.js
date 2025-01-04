@@ -1,4 +1,4 @@
 function solution(array, commands) {
-   const arr = commands.map((v)=>array.slice(v[0]-1,v[1]).sort((a,b)=>a-b).slice(v[2]-1,v[2]))
+   const arr = commands.map(([i,j,k])=>array.slice(i-1,j).sort((a,b)=>a-b).slice(k-1,k))
 return arr.flat()
 }
