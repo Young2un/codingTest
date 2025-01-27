@@ -1,6 +1,3 @@
-function solution(name) {
-  // const alphabet = ['A', 'B', 'C', 'D', 'E', 'F','G', 'H', 'I', 'J', 'K', 'L','M', 'N', 'O', 'P', 'Q', 'R','S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
- 
 const alphabetObject = {
   A: 0,
   B: 1,
@@ -30,6 +27,8 @@ const alphabetObject = {
   Z: 1,
 };
 
+function solution(name) {
+    
   const alphabetSum = [...name].map(v=>alphabetObject[v]).reduce((a,c)=>a+c,0)
   let moveCount = name.length - 1; 
   
@@ -41,6 +40,7 @@ const alphabetObject = {
             next++;
         }
         moveCount = Math.min(moveCount,i + name.length - next + Math.min(i, name.length - next)
+
     );
   }
 
