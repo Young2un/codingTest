@@ -7,8 +7,8 @@ const findBalancedIndex = (s) => {
 };
 
 const isCorrect = (s) => {
-    let stack = [];
-    for (let ch of s) {
+    const stack = [];
+    for (const ch of s) {
         if (ch === "(") {
             stack.push(ch);
         } else {
@@ -20,7 +20,7 @@ const isCorrect = (s) => {
 };
 
 const reverse = (s) => {
-    return s.split("").map(ch => (ch === "(" ? ")" : "(")).join("");
+    return s.split("").map(v => (v === "(" ? ")" : "(")).join("");
 };
 
 function solution(p) {
